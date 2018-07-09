@@ -101,6 +101,6 @@ def winner(board)
 end
 
 def play(board)
-  
+  puts "PLease enter number"
 end
 
