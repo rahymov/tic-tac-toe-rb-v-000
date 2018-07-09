@@ -82,7 +82,7 @@ def draw?(board)
 end
 
 def over?(board)
-  (draw?(board) || full?(board) || won?(board))
+  (draw?(board) || full?(board) || won?(board))? true : false
 end
 
 def winer(board)
