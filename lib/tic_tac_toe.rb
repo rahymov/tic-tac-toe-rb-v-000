@@ -101,7 +101,6 @@ def winner(board)
 end
 
 def play(board)
-  puts "Cat's Game!"
-  input = gets.strip
+  
 end
 
