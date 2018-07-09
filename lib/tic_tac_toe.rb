@@ -102,5 +102,6 @@ end
 
 def play(board)
   puts "PLease enter number"
+  input = gets.strip
 end
 
