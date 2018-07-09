@@ -82,6 +82,7 @@ def draw?(board)
 end
 
 def over?(board)
+  
 end
 
 def winer(board)
