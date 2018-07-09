@@ -42,7 +42,7 @@ def turn(board)
     move(board, position, player)
   else
     turn(board)
-  
+  end
 end
 
 def turn_count(board)
