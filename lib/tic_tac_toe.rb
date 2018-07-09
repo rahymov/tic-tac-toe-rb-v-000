@@ -38,7 +38,7 @@ def turn(board)
   puts "Enter a valid position(1-9):"
   user_input = gets.strip
   converted_position = input_to_index(user_input)
-  if move?(board) == true 
+  if validmove?(board) == true 
   
 end
 
