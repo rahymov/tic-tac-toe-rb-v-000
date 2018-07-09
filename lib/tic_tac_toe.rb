@@ -39,6 +39,7 @@ def turn(board)
   user_input = gets.strip
   position = input_to_index(user_input)
   
+  
 end
 
 def turn_count(board)
