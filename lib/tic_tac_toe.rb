@@ -57,20 +57,20 @@ def current_player(board)
 end
 
 def won?(board)
+  
   WIN_COMBINATIONS.each do |combo|
-    win_1 = board[0]
-    win_2 = board[1]
-    win_3 = board[2]
+    win_in_1 = combo[0]
+    win_in_2 = combo[1]
+    win_in_3 = combo[2]
     
-    win_pos_1 = board[win_1]
-    win_pos_2 = board[win_2]
-    win_pos_3 = board[win_3]
-    
-    if (win_pos_1 == "X" && win_pos_2 == "X" && win_pos_3 == "X") || (win_pos_1 == "O" && win_pos_2 == "O" && win_pos_3 == "O")
-      true
-    else
-      false
+    pos_1 = board[win_in_1]
+    pos_2 = board[win_in_2]
+    pos_3 = board[win_in_3]
+    if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") || (pos_1 == "O" && pos_2 == "O" && pos_3 == "O" )
+      return combo
     end
+  end
+  return false
 end
 
 def full?(board)
