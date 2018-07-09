@@ -85,8 +85,14 @@ def over?(board)
   (draw?(board) || full?(board) || won?(board))? true : false
 end
 
-def winer(board)
-  won?(board) 
+def winner(board)
+  if won?(board) 
+    win_in = won?(board)[0] 
+    winni = board[win_in]
+    return winni
+  else
+    return nil
+  end
 end
 
 def play(board)
