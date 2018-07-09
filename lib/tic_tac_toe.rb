@@ -86,7 +86,7 @@ def over?(board)
 end
 
 def winer(board)
-  
+  won?(board)
 end
 
 def play(board)
